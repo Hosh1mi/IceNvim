@@ -577,6 +577,7 @@ config["nvim-tree"] = {
         },
         update_focused_file = {
             enable = true,
+			update_root = true
         },
         filters = {
             dotfiles = false,
@@ -594,10 +595,11 @@ config["nvim-tree"] = {
         actions = {
             open_file = {
                 resize_window = true,
-                quit_on_open = true,
+                quit_on_open = false,
             },
         },
     },
+	lazy = false;
     keys = {
         { "<leader>uf", "<Cmd>NvimTreeToggle<CR>", desc = "toggle nvim tree", silent = true },
     },
@@ -606,7 +608,7 @@ config["nvim-tree"] = {
 config["nvim-treesitter"] = {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    dependencies = { "hiphish/rainbow-delimiters.nvim" },
+    dependencies = { "https://github.com/hiphish/rainbow-delimiters.nvim" },
     event = "User IceAfter colorscheme",
     branch = "main",
     opts = {

@@ -6,7 +6,9 @@ lsp = {
     ["bash-language-server"] = {
         formatter = "shfmt",
     },
-    clangd = {},
+    ["clangd"] = {
+		enabled = true,
+	},
     ["css-lsp"] = {
         formatter = "prettier",
         setup = {

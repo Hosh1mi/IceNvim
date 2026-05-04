@@ -25,7 +25,7 @@ opt.colorcolumn = "80"
 
 opt.tabstop = 4
 opt.shiftwidth = 0
-opt.expandtab = true
+opt.expandtab = false
 opt.shiftround = true
 
 -- Case insensitive searching when no upper case character is present
